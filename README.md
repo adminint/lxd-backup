@@ -1,6 +1,7 @@
 # lxd-backup
 
-Simple scripts for installation Microsoft Ondrive and backup lxd containers ver. >= 4 on ubuntu server.
+Simple scripts for installation Microsoft Ondrive and backup lxd containers on ubuntu server.
+Tested by LXD V. 3 and 4
 
 For installation
 1. cd /usr/local/src
