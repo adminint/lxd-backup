@@ -8,7 +8,7 @@ set -ex
 
 
 NOW=$(date +'%m-%d-%Y-%H')
-BACKUP_DIR="/root/OneDrive/Balnet/" 
+BACKUP_DIR="/root/OneDrive/$HOSTNAME/" 
  
 if [ ! -d $BACKUP_DIR"/"$NOW ] 
 then
