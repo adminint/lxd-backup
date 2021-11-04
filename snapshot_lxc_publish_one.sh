@@ -15,15 +15,6 @@ then
     mkdir $BACKUP_DIR"/"$NOW -p
 fi 
 
-## Dump LXD server config ##
-lxd init --dump > $BACKUP_DIR"/"$NOW"/lxd.config.${NOW}"
- 
-## Dump all instances list ##
-lxc list > $BACKUP_DIR"/"$NOW"/lxd.instances.list.${NOW}"
-
-HOSTS=($(lxc list -c n --format csv))
-
-
 BACKUP_NAME=${CONTAINER}-$(date +"%Y-%m-%d-%H")
 lxc snapshot ${CONTAINER} auto-backup
 lxc publish ${CONTAINER}/auto-backup --alias ${BACKUP_NAME}
