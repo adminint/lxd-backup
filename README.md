@@ -9,4 +9,4 @@ For installation
 3. cp send_mail.sh snapshot_lxc_publish.sh /usr/local/bin/
 4. chmod a+x /usr/local/bin/snapshot_lxc_publish.sh; chmod a+x /usr/local/bin/send_mail.sh; chmod a+x /usr/local/bin/snapshot_lxc_publish_one.sh
 5. Set username and password for your email account in file /usr/local/bin/send_mail.sh
-Download shared link from onedrive - wget -cO - "https://URL&download=1" > lxd_backup_file.tar.gz
+6. Download shared link from onedrive - wget -cO - "https://URL&download=1" > lxd_backup_file.tar.gz
